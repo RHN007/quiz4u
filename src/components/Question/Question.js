@@ -5,8 +5,8 @@ const Question = ({ qts, index }) => {
     return (
         <div>
             <div className="quiz border rounded mt-5 p-5">
-                <h1 className='text-center mb-4'>Quiz:{index + 1}  {question}</h1>
-                <div>
+                <h1 className=' mb-4'>Quiz:{index + 1}  {question}</h1>
+                <div className='p-5'>
                     <div className='grid grid-cols-2 gap-3'>
                         <div>
                             <label className="radio">
