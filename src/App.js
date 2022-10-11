@@ -18,6 +18,9 @@ function App() {
       children: [
         {
           path:'/home', 
+          loader: () => {
+
+          },
           element: <Home></Home>
         },
         {

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav className='flex justify-between mt-10'>
             <div>
-                <h1 className='text-white font-extrabold text-3xl'>QUIZ2YOU</h1>
+                <h1 className='text-white font-extrabold text-3xl'>QUIZ4U</h1>
             </div>
             <div className='font-bold text-lg text-white '>
             <Link to='/home'>Home</Link>
