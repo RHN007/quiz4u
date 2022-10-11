@@ -1,6 +1,7 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import PageNotFound from './components/404/PageNotFound';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
 import Home from './components/Home/Home';
@@ -34,9 +35,15 @@ function App() {
         {
           path: '/blogs', 
           element:<Blogs></Blogs>
-        }
+        },
+       
       ]
+    }, 
+    {
+      path: '*', 
+      element: <PageNotFound></PageNotFound>
     }
+    
 
   ])
 

@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='flex justify-between mt-10'>
+        <nav className='flex justify-between mt-10'>
             <div>
                 <h1 className='text-white font-extrabold text-3xl'>QUIZ2YOU</h1>
             </div>
@@ -15,7 +15,7 @@ const Header = () => {
             <Link to='/about'>About</Link>
             <Link to='/blogs'>Blogs</Link>
             </div>
-        </div>
+        </nav>
     );
 };
 
