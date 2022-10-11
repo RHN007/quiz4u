@@ -1,19 +1,31 @@
 
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import Topic from '../Topic/Topic';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 
-const Topics = () => {
-    const topics = useLoaderData()
+
+
+const Topics = ({topic}) => {
+    const {id, name, logo, total} = topic; 
     // console.log(topics.data);
+    const navigate = useNavigate()
+
+    const handleNavigate = () => {
+        navigate(`quiz/${id}`)
+    }
     return (
         <div>
-            <h1>This is for Topics {topics.data.length}</h1>
-           <div className='grid grid-cols-1 md:grid-cols-2 gap-5 '>
-           {
-                topics.data.map(topic => <Topic key={topic.id} topic={topic}></Topic> )
-            }
-           </div>
+             <div className="card card-compact bg-base-100 shadow-xl">
+            <figure><img src={logo} width={300} alt="Topics" /></figure>
+            <div className="card-body">
+            <h2 className="card-title">{name}</h2>
+             <p>Total Question: {total}</p>
+             <div className="card-actions justify-center">
+             <button onClick={handleNavigate} className="btn btn-primary">Give Quiz</button>
+           
+             </div>
+        </div>
+</div>
+          
         </div>
     );
 };

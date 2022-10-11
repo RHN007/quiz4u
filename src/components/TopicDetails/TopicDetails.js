@@ -2,16 +2,33 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
+
 const TopicDetails = () => {
     const details = useLoaderData()
     console.log(details.data)
+    const {id, name, questions} = details.data
     return (
         <div>
-            <h1>This is  {details.data.length}</h1>
-            {
-                details.data.map(detail => <Question id={detail.id} question = {detail}></Question>)
-            }
+            <h1 className='text-center'>Questions of {name}</h1>
+           <div>
+           
+            {questions.map((q, index)=> <Question key={q.id} index={index} qts={q}></Question>)}
+         
         </div>
+
+          
+
+         
+            
+            
+            
+         
+
+
+           </div>
+
+          
+        
     );
 };
 
