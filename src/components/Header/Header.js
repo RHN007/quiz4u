@@ -11,7 +11,7 @@ const Header = () => {
             <div className='font-bold text-lg flex flex-col md:flex-row md:content-center  '> 
             <NavLink className={({isActive})=> isActive ? undefined:'active'} to='/'>Topics</NavLink>
             <NavLink to='/statistics'>Statistics</NavLink>
-            <NavLink to='/about'>About</NavLink>
+            
             <NavLink to='/blogs'>Blogs</NavLink>
             </div>
         </nav>

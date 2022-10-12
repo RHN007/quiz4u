@@ -11,8 +11,8 @@ const PageNotFound = () => {
             </div>
 
             <div>
-            <p className='text-white mt-10'>SORRY BUT THE PAGE YOU ARE LOOKING FOR DOES NOT EXIST, HAVE BEEN REMOVED. NAME CHANGED OR IS TEMPORARILY UNAVAILABLE</p>
-            <Link to='/home'><button className='text-white mt-10'>Return to home page</button></Link>
+            <p className='mt-10'>SORRY BUT THE PAGE YOU ARE LOOKING FOR DOES NOT EXIST, HAVE BEEN REMOVED. NAME CHANGED OR IS TEMPORARILY UNAVAILABLE</p>
+            <Link to='/'><button className='mt-10'>Return to home page</button></Link>
             </div>
             
         </div>

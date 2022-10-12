@@ -21,6 +21,10 @@ function App() {
           path:'/',  
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
+        },{
+          path:'/home',
+          element: <Home></Home>
+
         },
         {
           path:'quiz',
@@ -37,11 +41,7 @@ function App() {
         {
           path:'/statistics',
           element: <Statistics></Statistics>
-        }, 
-        {
-          path: '/about', 
-          element: <About></About>
-        }, 
+        },  
         {
           path: '/blogs', 
           element:<Blogs></Blogs>
