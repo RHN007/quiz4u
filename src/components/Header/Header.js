@@ -1,19 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, NavNavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
     return (
         <nav className='flex justify-between mt-10'>
             <div>
-                <h1 className=' font-extrabold text-3xl'>QUIZ4U</h1>
+                <h1 className=' font-extrabold text-3xl text-blue-600'>QUIZ4U</h1>
             </div>
-            <div className='font-bold text-lg  '>
-            
-            <Link to='/'>Topics</Link>
-            <Link to='/statistics'>Statistics</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/blogs'>Blogs</Link>
+            <div className='font-bold text-lg flex flex-col md:flex-row md:content-center  '> 
+            <NavLink className={({isActive})=> isActive ? 'active' : undefined} to='/'>Topics</NavLink>
+            <NavLink to='/statistics'>Statistics</NavLink>
+            <NavLink to='/about'>About</NavLink>
+            <NavLink to='/blogs'>Blogs</NavLink>
             </div>
         </nav>
     );

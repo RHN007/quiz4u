@@ -4,8 +4,17 @@ a {
 }
 
 a:hover{
-    background-color: red;
+    background-color: blue;
     border-radius: 10px;
     font-size: x-large;
     padding: 3px;
+    color: white
+}
+
+.active {
+    background-color: blue;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 3px;
+    color: white
 }
