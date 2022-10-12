@@ -23,10 +23,7 @@ const Question = ({ qts, index }) => {
                 position: toast.POSITION.TOP_LEFT
               });
         }        
-    }
- 
-    
-   
+    }  
     return (
         <div>
             <div className="quiz  outline outline-offset-2  outline-green-700 rounded-lg  m-5 md:m-0 md:mt-5 p-5">

@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# What Have used in this website 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* I have used react router dom . 
+* Tailwind Css for UI Design
+* Daisy UI 
+* Rechart 
+* HeroIcons
 
 ## Available Scripts
 
