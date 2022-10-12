@@ -1,40 +1,19 @@
-import React, { useContext } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { TopicContext } from '../Topics/Topics';
+
+
+import { useLoaderData } from 'react-router-dom';
+import { LineChart, Line, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+
 
 
 
 const Statistics = () => {
-    const data = useContext(TopicContext)
-    const data1 = [
-        {
-            name: 'React',
-            quiz: 8,
-
-        },
-        {
-            name: 'JavaScript',
-            quiz: 9,
-
-        },
-        {
-            name: 'CSS',
-            quiz: 8
-        },
-        {
-            name: 'Git',
-            quiz: 11,
-        },
-
-    ];
-
-
-
+    const data2 = useLoaderData()
+    // console.log(data2)
     return (
-        <div className='mt-10'>
+        <div className='mr-6 mt-10 flex justify-center'>
         <ResponsiveContainer width={400}height={400}>
-        <LineChart width={400} height={400} data={data1}>
-                <Line type='monotone' dataKey="quiz" stroke='#82ca9d'></Line>
+        <LineChart width={300} height={300} data={data2.data}>
+                <Line type='monotone' dataKey="total" stroke='#82ca9d'></Line>
                 <XAxis dataKey="name"></XAxis>
                 <YAxis></YAxis>
 
