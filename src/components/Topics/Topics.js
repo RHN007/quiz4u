@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
 
+export const TopicContext = createContext()
 const Topics = ({ topic }) => {
+    
     const { id, name, logo, total } = topic;
     const navigate = useNavigate()
     const handleNavigate = () => {
         navigate(`quiz/${id}`)
     }
     return (
-        <div>
+        
+        <TopicContext.Provider value={topic}>
+            <div>
             <div className="card card-compact bg-base-300 shadow-xl">
                 <figure className='p-5'><img src={logo} width={300} alt="Topics" /></figure>
                 <div className="card-body">
@@ -21,8 +25,11 @@ const Topics = ({ topic }) => {
                     </div>
                 </div>
             </div>
+            
         </div>
-    );
-};
-
+        </TopicContext.Provider>
+     
+     );
+    };
+    
 export default Topics;
