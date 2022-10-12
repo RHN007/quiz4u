@@ -10,11 +10,11 @@ const Home = () => {
         <div >
             
 
-            <div className='md:flex  md:justify-between md:content-center p-24 '>
-            <div > 
-            <h2  >Show real <br /> <span className=' text-8xl md:text-6xl font-bold'>Power of Your Mind</span></h2>
+            <div className='md:flex  md:justify-between md:content-center md:p-24 '>
+            <div className='text-center md:text-left'> 
+            <h2 className='text-2xl' >Show real <br /> <span className=' text-5xl md:text-6xl font-bold'>Power of Your Mind</span></h2>
             </div>
-            <div className='ml-10 md:ml-0'>
+            <div className=' md:ml-0'>
                 <img className='rounded' src={img} width={300} alt="" />
             </div>
             </div>
